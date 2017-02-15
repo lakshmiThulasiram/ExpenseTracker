@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		081FEAA91E54857100424071 /* ExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081FEAA81E54857100424071 /* ExpenseViewController.m */; };
+		081FEAAC1E548E5B00424071 /* ExpenseListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 081FEAAB1E548E5B00424071 /* ExpenseListTableViewCell.m */; };
+		081FEAAF1E548EA100424071 /* ListExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081FEAAE1E548EA100424071 /* ListExpenseViewController.m */; };
+		081FEAB21E54C08800424071 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 081FEAB11E54C08800424071 /* CacheManager.m */; };
+		0833AD091E5438B300217B31 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833AD081E5438B300217B31 /* LoginViewController.m */; };
+		0833AD0C1E5438C600217B31 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833AD0B1E5438C600217B31 /* RegisterViewController.m */; };
+		0833AD0F1E54553000217B31 /* ExpenseBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833AD0E1E54553000217B31 /* ExpenseBaseViewController.m */; };
+		08A0D4DF1E54D2E6002F3156 /* SelectCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A0D4DE1E54D2E6002F3156 /* SelectCategoryViewController.m */; };
+		08A0D4E21E54D451002F3156 /* CategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A0D4E11E54D451002F3156 /* CategoryTableViewCell.m */; };
+		08F7CB071E5045F00034FD31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F7CB061E5045F00034FD31 /* main.m */; };
+		08F7CB0A1E5045F10034FD31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F7CB091E5045F10034FD31 /* AppDelegate.m */; };
+		08F7CB101E5045F20034FD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F7CB0E1E5045F20034FD31 /* Main.storyboard */; };
+		08F7CB131E5045F30034FD31 /* ExpenseTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 08F7CB111E5045F20034FD31 /* ExpenseTracker.xcdatamodeld */; };
+		08F7CB151E5045F30034FD31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08F7CB141E5045F30034FD31 /* Assets.xcassets */; };
+		08F7CB231E5045F80034FD31 /* ExpenseTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F7CB221E5045F80034FD31 /* ExpenseTrackerTests.m */; };
+		08F7CB2E1E5045F80034FD31 /* ExpenseTrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F7CB2D1E5045F80034FD31 /* ExpenseTrackerUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08F7CB1F1E5045F80034FD31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08F7CAFA1E5045F00034FD31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08F7CB011E5045F00034FD31;
+			remoteInfo = ExpenseTracker;
+		};
+		08F7CB2A1E5045F80034FD31 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08F7CAFA1E5045F00034FD31 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08F7CB011E5045F00034FD31;
+			remoteInfo = ExpenseTracker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		081FEAA71E54857100424071 /* ExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpenseViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseViewController.h"; sourceTree = "<group>"; };
+		081FEAA81E54857100424071 /* ExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpenseViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseViewController.m"; sourceTree = "<group>"; };
+		081FEAAA1E548E5B00424071 /* ExpenseListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpenseListTableViewCell.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseListTableViewCell.h"; sourceTree = "<group>"; };
+		081FEAAB1E548E5B00424071 /* ExpenseListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpenseListTableViewCell.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseListTableViewCell.m"; sourceTree = "<group>"; };
+		081FEAAD1E548EA100424071 /* ListExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListExpenseViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ListExpenseViewController.h"; sourceTree = "<group>"; };
+		081FEAAE1E548EA100424071 /* ListExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListExpenseViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ListExpenseViewController.m"; sourceTree = "<group>"; };
+		081FEAB01E54C08800424071 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CacheManager.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/CacheManager.h"; sourceTree = "<group>"; };
+		081FEAB11E54C08800424071 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CacheManager.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/CacheManager.m"; sourceTree = "<group>"; };
+		0833AD071E5438B300217B31 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/LoginViewController.h"; sourceTree = "<group>"; };
+		0833AD081E5438B300217B31 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/LoginViewController.m"; sourceTree = "<group>"; };
+		0833AD0A1E5438C600217B31 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/RegisterViewController.h"; sourceTree = "<group>"; };
+		0833AD0B1E5438C600217B31 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/RegisterViewController.m"; sourceTree = "<group>"; };
+		0833AD0D1E54553000217B31 /* ExpenseBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpenseBaseViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseBaseViewController.h"; sourceTree = "<group>"; };
+		0833AD0E1E54553000217B31 /* ExpenseBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpenseBaseViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseBaseViewController.m"; sourceTree = "<group>"; };
+		08A0D4DD1E54D2E6002F3156 /* SelectCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectCategoryViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/SelectCategoryViewController.h"; sourceTree = "<group>"; };
+		08A0D4DE1E54D2E6002F3156 /* SelectCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectCategoryViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/SelectCategoryViewController.m"; sourceTree = "<group>"; };
+		08A0D4E01E54D451002F3156 /* CategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryTableViewCell.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/CategoryTableViewCell.h"; sourceTree = "<group>"; };
+		08A0D4E11E54D451002F3156 /* CategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryTableViewCell.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/CategoryTableViewCell.m"; sourceTree = "<group>"; };
+		08A0D4E31E54DA02002F3156 /* User+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataClass.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/User+CoreDataClass.h"; sourceTree = "<group>"; };
+		08A0D4E41E54DA02002F3156 /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataClass.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/User+CoreDataClass.m"; sourceTree = "<group>"; };
+		08A0D4E51E54DA02002F3156 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataProperties.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/User+CoreDataProperties.h"; sourceTree = "<group>"; };
+		08A0D4E61E54DA02002F3156 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataProperties.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/User+CoreDataProperties.m"; sourceTree = "<group>"; };
+		08A0D4E71E54DA02002F3156 /* Expense+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Expense+CoreDataClass.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Expense+CoreDataClass.h"; sourceTree = "<group>"; };
+		08A0D4E81E54DA02002F3156 /* Expense+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Expense+CoreDataClass.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Expense+CoreDataClass.m"; sourceTree = "<group>"; };
+		08A0D4E91E54DA02002F3156 /* Expense+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Expense+CoreDataProperties.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Expense+CoreDataProperties.h"; sourceTree = "<group>"; };
+		08A0D4EA1E54DA02002F3156 /* Expense+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Expense+CoreDataProperties.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Expense+CoreDataProperties.m"; sourceTree = "<group>"; };
+		08A0D4EB1E54DA02002F3156 /* Category+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Category+CoreDataClass.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Category+CoreDataClass.h"; sourceTree = "<group>"; };
+		08A0D4EC1E54DA02002F3156 /* Category+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Category+CoreDataClass.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Category+CoreDataClass.m"; sourceTree = "<group>"; };
+		08A0D4ED1E54DA02002F3156 /* Category+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Category+CoreDataProperties.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Category+CoreDataProperties.h"; sourceTree = "<group>"; };
+		08A0D4EE1E54DA02002F3156 /* Category+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Category+CoreDataProperties.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Category+CoreDataProperties.m"; sourceTree = "<group>"; };
+		08F7CB021E5045F00034FD31 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F7CB061E5045F00034FD31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		08F7CB081E5045F00034FD31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		08F7CB091E5045F10034FD31 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		08F7CB0F1E5045F20034FD31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08F7CB121E5045F20034FD31 /* ExpenseTracker.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ExpenseTracker.xcdatamodel; sourceTree = "<group>"; };
+		08F7CB141E5045F30034FD31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08F7CB191E5045F40034FD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F7CB1E1E5045F80034FD31 /* ExpenseTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F7CB221E5045F80034FD31 /* ExpenseTrackerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpenseTrackerTests.m; sourceTree = "<group>"; };
+		08F7CB241E5045F80034FD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08F7CB291E5045F80034FD31 /* ExpenseTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08F7CB2D1E5045F80034FD31 /* ExpenseTrackerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpenseTrackerUITests.m; sourceTree = "<group>"; };
+		08F7CB2F1E5045F90034FD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08F7CAFF1E5045F00034FD31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F7CB1B1E5045F80034FD31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F7CB261E5045F80034FD31 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08F7CAF91E5045EF0034FD31 = {
+			isa = PBXGroup;
+			children = (
+				08A0D4E31E54DA02002F3156 /* User+CoreDataClass.h */,
+				08A0D4E41E54DA02002F3156 /* User+CoreDataClass.m */,
+				08A0D4E51E54DA02002F3156 /* User+CoreDataProperties.h */,
+				08A0D4E61E54DA02002F3156 /* User+CoreDataProperties.m */,
+				08A0D4E71E54DA02002F3156 /* Expense+CoreDataClass.h */,
+				08A0D4E81E54DA02002F3156 /* Expense+CoreDataClass.m */,
+				08A0D4E91E54DA02002F3156 /* Expense+CoreDataProperties.h */,
+				08A0D4EA1E54DA02002F3156 /* Expense+CoreDataProperties.m */,
+				08A0D4EB1E54DA02002F3156 /* Category+CoreDataClass.h */,
+				08A0D4EC1E54DA02002F3156 /* Category+CoreDataClass.m */,
+				08A0D4ED1E54DA02002F3156 /* Category+CoreDataProperties.h */,
+				08A0D4EE1E54DA02002F3156 /* Category+CoreDataProperties.m */,
+				08F7CB041E5045F00034FD31 /* ExpenseTracker */,
+				08F7CB211E5045F80034FD31 /* ExpenseTrackerTests */,
+				08F7CB2C1E5045F80034FD31 /* ExpenseTrackerUITests */,
+				08F7CB031E5045F00034FD31 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08F7CB031E5045F00034FD31 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08F7CB021E5045F00034FD31 /* ExpenseTracker.app */,
+				08F7CB1E1E5045F80034FD31 /* ExpenseTrackerTests.xctest */,
+				08F7CB291E5045F80034FD31 /* ExpenseTrackerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08F7CB041E5045F00034FD31 /* ExpenseTracker */ = {
+			isa = PBXGroup;
+			children = (
+				08F7CB081E5045F00034FD31 /* AppDelegate.h */,
+				08F7CB091E5045F10034FD31 /* AppDelegate.m */,
+				08F7CB0E1E5045F20034FD31 /* Main.storyboard */,
+				08F7CB141E5045F30034FD31 /* Assets.xcassets */,
+				08F7CB191E5045F40034FD31 /* Info.plist */,
+				08F7CB111E5045F20034FD31 /* ExpenseTracker.xcdatamodeld */,
+				08F7CB051E5045F00034FD31 /* Supporting Files */,
+				0833AD071E5438B300217B31 /* LoginViewController.h */,
+				0833AD081E5438B300217B31 /* LoginViewController.m */,
+				0833AD0A1E5438C600217B31 /* RegisterViewController.h */,
+				0833AD0B1E5438C600217B31 /* RegisterViewController.m */,
+				0833AD0D1E54553000217B31 /* ExpenseBaseViewController.h */,
+				0833AD0E1E54553000217B31 /* ExpenseBaseViewController.m */,
+				081FEAA71E54857100424071 /* ExpenseViewController.h */,
+				081FEAA81E54857100424071 /* ExpenseViewController.m */,
+				081FEAAA1E548E5B00424071 /* ExpenseListTableViewCell.h */,
+				081FEAAB1E548E5B00424071 /* ExpenseListTableViewCell.m */,
+				081FEAAD1E548EA100424071 /* ListExpenseViewController.h */,
+				081FEAAE1E548EA100424071 /* ListExpenseViewController.m */,
+				081FEAB01E54C08800424071 /* CacheManager.h */,
+				081FEAB11E54C08800424071 /* CacheManager.m */,
+				08A0D4DD1E54D2E6002F3156 /* SelectCategoryViewController.h */,
+				08A0D4DE1E54D2E6002F3156 /* SelectCategoryViewController.m */,
+				08A0D4E01E54D451002F3156 /* CategoryTableViewCell.h */,
+				08A0D4E11E54D451002F3156 /* CategoryTableViewCell.m */,
+			);
+			path = ExpenseTracker;
+			sourceTree = "<group>";
+		};
+		08F7CB051E5045F00034FD31 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				08F7CB061E5045F00034FD31 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		08F7CB211E5045F80034FD31 /* ExpenseTrackerTests */ = {
+			isa = PBXGroup;
+			children = (
+				08F7CB221E5045F80034FD31 /* ExpenseTrackerTests.m */,
+				08F7CB241E5045F80034FD31 /* Info.plist */,
+			);
+			path = ExpenseTrackerTests;
+			sourceTree = "<group>";
+		};
+		08F7CB2C1E5045F80034FD31 /* ExpenseTrackerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08F7CB2D1E5045F80034FD31 /* ExpenseTrackerUITests.m */,
+				08F7CB2F1E5045F90034FD31 /* Info.plist */,
+			);
+			path = ExpenseTrackerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08F7CB011E5045F00034FD31 /* ExpenseTracker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08F7CB321E5045F90034FD31 /* Build configuration list for PBXNativeTarget "ExpenseTracker" */;
+			buildPhases = (
+				08F7CAFE1E5045F00034FD31 /* Sources */,
+				08F7CAFF1E5045F00034FD31 /* Frameworks */,
+				08F7CB001E5045F00034FD31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ExpenseTracker;
+			productName = ExpenseTracker;
+			productReference = 08F7CB021E5045F00034FD31 /* ExpenseTracker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08F7CB1D1E5045F80034FD31 /* ExpenseTrackerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08F7CB351E5045F90034FD31 /* Build configuration list for PBXNativeTarget "ExpenseTrackerTests" */;
+			buildPhases = (
+				08F7CB1A1E5045F80034FD31 /* Sources */,
+				08F7CB1B1E5045F80034FD31 /* Frameworks */,
+				08F7CB1C1E5045F80034FD31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08F7CB201E5045F80034FD31 /* PBXTargetDependency */,
+			);
+			name = ExpenseTrackerTests;
+			productName = ExpenseTrackerTests;
+			productReference = 08F7CB1E1E5045F80034FD31 /* ExpenseTrackerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08F7CB281E5045F80034FD31 /* ExpenseTrackerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08F7CB381E5045F90034FD31 /* Build configuration list for PBXNativeTarget "ExpenseTrackerUITests" */;
+			buildPhases = (
+				08F7CB251E5045F80034FD31 /* Sources */,
+				08F7CB261E5045F80034FD31 /* Frameworks */,
+				08F7CB271E5045F80034FD31 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08F7CB2B1E5045F80034FD31 /* PBXTargetDependency */,
+			);
+			name = ExpenseTrackerUITests;
+			productName = ExpenseTrackerUITests;
+			productReference = 08F7CB291E5045F80034FD31 /* ExpenseTrackerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08F7CAFA1E5045F00034FD31 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Lakshmi Thulasiram";
+				TargetAttributes = {
+					08F7CB011E5045F00034FD31 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					08F7CB1D1E5045F80034FD31 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 08F7CB011E5045F00034FD31;
+					};
+					08F7CB281E5045F80034FD31 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 08F7CB011E5045F00034FD31;
+					};
+				};
+			};
+			buildConfigurationList = 08F7CAFD1E5045F00034FD31 /* Build configuration list for PBXProject "ExpenseTracker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08F7CAF91E5045EF0034FD31;
+			productRefGroup = 08F7CB031E5045F00034FD31 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08F7CB011E5045F00034FD31 /* ExpenseTracker */,
+				08F7CB1D1E5045F80034FD31 /* ExpenseTrackerTests */,
+				08F7CB281E5045F80034FD31 /* ExpenseTrackerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08F7CB001E5045F00034FD31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F7CB151E5045F30034FD31 /* Assets.xcassets in Resources */,
+				08F7CB101E5045F20034FD31 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F7CB1C1E5045F80034FD31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F7CB271E5045F80034FD31 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08F7CAFE1E5045F00034FD31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				081FEAA91E54857100424071 /* ExpenseViewController.m in Sources */,
+				0833AD0C1E5438C600217B31 /* RegisterViewController.m in Sources */,
+				0833AD0F1E54553000217B31 /* ExpenseBaseViewController.m in Sources */,
+				08F7CB0A1E5045F10034FD31 /* AppDelegate.m in Sources */,
+				081FEAAC1E548E5B00424071 /* ExpenseListTableViewCell.m in Sources */,
+				08A0D4DF1E54D2E6002F3156 /* SelectCategoryViewController.m in Sources */,
+				08F7CB071E5045F00034FD31 /* main.m in Sources */,
+				08A0D4E21E54D451002F3156 /* CategoryTableViewCell.m in Sources */,
+				081FEAB21E54C08800424071 /* CacheManager.m in Sources */,
+				08F7CB131E5045F30034FD31 /* ExpenseTracker.xcdatamodeld in Sources */,
+				0833AD091E5438B300217B31 /* LoginViewController.m in Sources */,
+				081FEAAF1E548EA100424071 /* ListExpenseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F7CB1A1E5045F80034FD31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F7CB231E5045F80034FD31 /* ExpenseTrackerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08F7CB251E5045F80034FD31 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08F7CB2E1E5045F80034FD31 /* ExpenseTrackerUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08F7CB201E5045F80034FD31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08F7CB011E5045F00034FD31 /* ExpenseTracker */;
+			targetProxy = 08F7CB1F1E5045F80034FD31 /* PBXContainerItemProxy */;
+		};
+		08F7CB2B1E5045F80034FD31 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08F7CB011E5045F00034FD31 /* ExpenseTracker */;
+			targetProxy = 08F7CB2A1E5045F80034FD31 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08F7CB0E1E5045F20034FD31 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08F7CB0F1E5045F20034FD31 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08F7CB301E5045F90034FD31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		08F7CB311E5045F90034FD31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08F7CB331E5045F90034FD31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExpenseTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msf.ExpenseTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		08F7CB341E5045F90034FD31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ExpenseTracker/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msf.ExpenseTracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		08F7CB361E5045F90034FD31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExpenseTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msf.ExpenseTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExpenseTracker.app/ExpenseTracker";
+			};
+			name = Debug;
+		};
+		08F7CB371E5045F90034FD31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ExpenseTrackerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msf.ExpenseTrackerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ExpenseTracker.app/ExpenseTracker";
+			};
+			name = Release;
+		};
+		08F7CB391E5045F90034FD31 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ExpenseTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msf.ExpenseTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ExpenseTracker;
+			};
+			name = Debug;
+		};
+		08F7CB3A1E5045F90034FD31 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ExpenseTrackerUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.msf.ExpenseTrackerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ExpenseTracker;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08F7CAFD1E5045F00034FD31 /* Build configuration list for PBXProject "ExpenseTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F7CB301E5045F90034FD31 /* Debug */,
+				08F7CB311E5045F90034FD31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08F7CB321E5045F90034FD31 /* Build configuration list for PBXNativeTarget "ExpenseTracker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F7CB331E5045F90034FD31 /* Debug */,
+				08F7CB341E5045F90034FD31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08F7CB351E5045F90034FD31 /* Build configuration list for PBXNativeTarget "ExpenseTrackerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F7CB361E5045F90034FD31 /* Debug */,
+				08F7CB371E5045F90034FD31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08F7CB381E5045F90034FD31 /* Build configuration list for PBXNativeTarget "ExpenseTrackerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08F7CB391E5045F90034FD31 /* Debug */,
+				08F7CB3A1E5045F90034FD31 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		08F7CB111E5045F20034FD31 /* ExpenseTracker.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				08F7CB121E5045F20034FD31 /* ExpenseTracker.xcdatamodel */,
+			);
+			currentVersion = 08F7CB121E5045F20034FD31 /* ExpenseTracker.xcdatamodel */;
+			path = ExpenseTracker.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 08F7CAFA1E5045F00034FD31 /* Project object */;
+}
