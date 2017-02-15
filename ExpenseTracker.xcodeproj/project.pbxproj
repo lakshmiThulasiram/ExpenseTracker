@@ -295,8 +295,7 @@
 				TargetAttributes = {
 					08F7CB011E5045F00034FD31 = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 5CNN55283J;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 					};
 					08F7CB1D1E5045F80034FD31 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -511,15 +510,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Market Simplified Inc";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Market Simplified Inc";
-				DEVELOPMENT_TEAM = 5CNN55283J;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ExpenseTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.msf.ExpenseTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1d1ecb17-9b07-4a8e-a4ac-3ba6cf0ff96b";
-				PROVISIONING_PROFILE_SPECIFIER = "MSF Wildcard In House Profile";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -527,15 +526,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution: Market Simplified Inc";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Market Simplified Inc";
-				DEVELOPMENT_TEAM = 5CNN55283J;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ExpenseTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.msf.ExpenseTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "1d1ecb17-9b07-4a8e-a4ac-3ba6cf0ff96b";
-				PROVISIONING_PROFILE_SPECIFIER = "MSF Wildcard In House Profile";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
