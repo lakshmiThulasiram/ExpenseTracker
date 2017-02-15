@@ -51,6 +51,12 @@
         
    
 }
+- (IBAction)closeAction:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:^{
+        [self.delegate fetchExpenseData];
+    }];
+
+}
 #pragma Helper
 -(void)insertExpenseToDB
 {
