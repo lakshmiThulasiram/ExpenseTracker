@@ -7,15 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		081FEAA91E54857100424071 /* ExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081FEAA81E54857100424071 /* ExpenseViewController.m */; };
-		081FEAAC1E548E5B00424071 /* ExpenseListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 081FEAAB1E548E5B00424071 /* ExpenseListTableViewCell.m */; };
-		081FEAAF1E548EA100424071 /* ListExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 081FEAAE1E548EA100424071 /* ListExpenseViewController.m */; };
-		081FEAB21E54C08800424071 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 081FEAB11E54C08800424071 /* CacheManager.m */; };
-		0833AD091E5438B300217B31 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833AD081E5438B300217B31 /* LoginViewController.m */; };
-		0833AD0C1E5438C600217B31 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833AD0B1E5438C600217B31 /* RegisterViewController.m */; };
-		0833AD0F1E54553000217B31 /* ExpenseBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0833AD0E1E54553000217B31 /* ExpenseBaseViewController.m */; };
-		08A0D4DF1E54D2E6002F3156 /* SelectCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A0D4DE1E54D2E6002F3156 /* SelectCategoryViewController.m */; };
-		08A0D4E21E54D451002F3156 /* CategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 08A0D4E11E54D451002F3156 /* CategoryTableViewCell.m */; };
 		08F7CB071E5045F00034FD31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F7CB061E5045F00034FD31 /* main.m */; };
 		08F7CB0A1E5045F10034FD31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F7CB091E5045F10034FD31 /* AppDelegate.m */; };
 		08F7CB101E5045F20034FD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F7CB0E1E5045F20034FD31 /* Main.storyboard */; };
@@ -23,6 +14,15 @@
 		08F7CB151E5045F30034FD31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08F7CB141E5045F30034FD31 /* Assets.xcassets */; };
 		08F7CB231E5045F80034FD31 /* ExpenseTrackerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F7CB221E5045F80034FD31 /* ExpenseTrackerTests.m */; };
 		08F7CB2E1E5045F80034FD31 /* ExpenseTrackerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F7CB2D1E5045F80034FD31 /* ExpenseTrackerUITests.m */; };
+		DBB1BFB71E55CB9700A94686 /* CategoryTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB1BFB41E55CB9700A94686 /* CategoryTableViewCell.m */; };
+		DBB1BFB81E55CB9700A94686 /* ExpenseListTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB1BFB61E55CB9700A94686 /* ExpenseListTableViewCell.m */; };
+		DBB1BFBF1E55CBB900A94686 /* ExpenseBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB1BFBA1E55CBB900A94686 /* ExpenseBaseViewController.m */; };
+		DBB1BFC01E55CBB900A94686 /* RegisterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB1BFBC1E55CBB900A94686 /* RegisterViewController.m */; };
+		DBB1BFC11E55CBB900A94686 /* SelectCategoryViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB1BFBE1E55CBB900A94686 /* SelectCategoryViewController.m */; };
+		DBB1BFC61E55CBC500A94686 /* ListExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB1BFC31E55CBC500A94686 /* ListExpenseViewController.m */; };
+		DBB1BFC71E55CBC500A94686 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB1BFC51E55CBC500A94686 /* LoginViewController.m */; };
+		DBB1BFCA1E55CBD400A94686 /* CacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB1BFC91E55CBD400A94686 /* CacheManager.m */; };
+		DBB1BFCD1E55CBDC00A94686 /* ExpenseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB1BFCC1E55CBDC00A94686 /* ExpenseViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,36 +43,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		081FEAA71E54857100424071 /* ExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpenseViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseViewController.h"; sourceTree = "<group>"; };
-		081FEAA81E54857100424071 /* ExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpenseViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseViewController.m"; sourceTree = "<group>"; };
-		081FEAAA1E548E5B00424071 /* ExpenseListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpenseListTableViewCell.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseListTableViewCell.h"; sourceTree = "<group>"; };
-		081FEAAB1E548E5B00424071 /* ExpenseListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpenseListTableViewCell.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseListTableViewCell.m"; sourceTree = "<group>"; };
-		081FEAAD1E548EA100424071 /* ListExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListExpenseViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ListExpenseViewController.h"; sourceTree = "<group>"; };
-		081FEAAE1E548EA100424071 /* ListExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListExpenseViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ListExpenseViewController.m"; sourceTree = "<group>"; };
-		081FEAB01E54C08800424071 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CacheManager.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/CacheManager.h"; sourceTree = "<group>"; };
-		081FEAB11E54C08800424071 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CacheManager.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/CacheManager.m"; sourceTree = "<group>"; };
-		0833AD071E5438B300217B31 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LoginViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/LoginViewController.h"; sourceTree = "<group>"; };
-		0833AD081E5438B300217B31 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = LoginViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/LoginViewController.m"; sourceTree = "<group>"; };
-		0833AD0A1E5438C600217B31 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RegisterViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/RegisterViewController.h"; sourceTree = "<group>"; };
-		0833AD0B1E5438C600217B31 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RegisterViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/RegisterViewController.m"; sourceTree = "<group>"; };
-		0833AD0D1E54553000217B31 /* ExpenseBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExpenseBaseViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseBaseViewController.h"; sourceTree = "<group>"; };
-		0833AD0E1E54553000217B31 /* ExpenseBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExpenseBaseViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ExpenseBaseViewController.m"; sourceTree = "<group>"; };
-		08A0D4DD1E54D2E6002F3156 /* SelectCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectCategoryViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/SelectCategoryViewController.h"; sourceTree = "<group>"; };
-		08A0D4DE1E54D2E6002F3156 /* SelectCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectCategoryViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/SelectCategoryViewController.m"; sourceTree = "<group>"; };
-		08A0D4E01E54D451002F3156 /* CategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CategoryTableViewCell.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/CategoryTableViewCell.h"; sourceTree = "<group>"; };
-		08A0D4E11E54D451002F3156 /* CategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CategoryTableViewCell.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/CategoryTableViewCell.m"; sourceTree = "<group>"; };
-		08A0D4E31E54DA02002F3156 /* User+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataClass.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/User+CoreDataClass.h"; sourceTree = "<group>"; };
-		08A0D4E41E54DA02002F3156 /* User+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataClass.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/User+CoreDataClass.m"; sourceTree = "<group>"; };
-		08A0D4E51E54DA02002F3156 /* User+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "User+CoreDataProperties.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/User+CoreDataProperties.h"; sourceTree = "<group>"; };
-		08A0D4E61E54DA02002F3156 /* User+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "User+CoreDataProperties.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/User+CoreDataProperties.m"; sourceTree = "<group>"; };
-		08A0D4E71E54DA02002F3156 /* Expense+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Expense+CoreDataClass.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Expense+CoreDataClass.h"; sourceTree = "<group>"; };
-		08A0D4E81E54DA02002F3156 /* Expense+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Expense+CoreDataClass.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Expense+CoreDataClass.m"; sourceTree = "<group>"; };
-		08A0D4E91E54DA02002F3156 /* Expense+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Expense+CoreDataProperties.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Expense+CoreDataProperties.h"; sourceTree = "<group>"; };
-		08A0D4EA1E54DA02002F3156 /* Expense+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Expense+CoreDataProperties.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Expense+CoreDataProperties.m"; sourceTree = "<group>"; };
-		08A0D4EB1E54DA02002F3156 /* Category+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Category+CoreDataClass.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Category+CoreDataClass.h"; sourceTree = "<group>"; };
-		08A0D4EC1E54DA02002F3156 /* Category+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Category+CoreDataClass.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Category+CoreDataClass.m"; sourceTree = "<group>"; };
-		08A0D4ED1E54DA02002F3156 /* Category+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Category+CoreDataProperties.h"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Category+CoreDataProperties.h"; sourceTree = "<group>"; };
-		08A0D4EE1E54DA02002F3156 /* Category+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Category+CoreDataProperties.m"; path = "../../../../apple/development/MY TRIES/ExpenseTracker/Category+CoreDataProperties.m"; sourceTree = "<group>"; };
 		08F7CB021E5045F00034FD31 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F7CB061E5045F00034FD31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		08F7CB081E5045F00034FD31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -87,6 +57,32 @@
 		08F7CB291E5045F80034FD31 /* ExpenseTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ExpenseTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F7CB2D1E5045F80034FD31 /* ExpenseTrackerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ExpenseTrackerUITests.m; sourceTree = "<group>"; };
 		08F7CB2F1E5045F90034FD31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBB1BFA71E55CB7D00A94686 /* Category+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Category+CoreDataClass.h"; path = "CoreData/Category+CoreDataClass.h"; sourceTree = "<group>"; };
+		DBB1BFA81E55CB7D00A94686 /* Category+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Category+CoreDataClass.m"; path = "CoreData/Category+CoreDataClass.m"; sourceTree = "<group>"; };
+		DBB1BFA91E55CB7D00A94686 /* Category+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Category+CoreDataProperties.h"; path = "CoreData/Category+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DBB1BFAA1E55CB7D00A94686 /* Category+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Category+CoreDataProperties.m"; path = "CoreData/Category+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DBB1BFAB1E55CB7D00A94686 /* Expense+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Expense+CoreDataClass.h"; path = "CoreData/Expense+CoreDataClass.h"; sourceTree = "<group>"; };
+		DBB1BFAC1E55CB7D00A94686 /* Expense+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Expense+CoreDataClass.m"; path = "CoreData/Expense+CoreDataClass.m"; sourceTree = "<group>"; };
+		DBB1BFAD1E55CB7D00A94686 /* Expense+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Expense+CoreDataProperties.h"; path = "CoreData/Expense+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DBB1BFAE1E55CB7D00A94686 /* Expense+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "Expense+CoreDataProperties.m"; path = "CoreData/Expense+CoreDataProperties.m"; sourceTree = "<group>"; };
+		DBB1BFB31E55CB9700A94686 /* CategoryTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryTableViewCell.h; sourceTree = "<group>"; };
+		DBB1BFB41E55CB9700A94686 /* CategoryTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryTableViewCell.m; sourceTree = "<group>"; };
+		DBB1BFB51E55CB9700A94686 /* ExpenseListTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpenseListTableViewCell.h; sourceTree = "<group>"; };
+		DBB1BFB61E55CB9700A94686 /* ExpenseListTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpenseListTableViewCell.m; sourceTree = "<group>"; };
+		DBB1BFB91E55CBB900A94686 /* ExpenseBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpenseBaseViewController.h; sourceTree = "<group>"; };
+		DBB1BFBA1E55CBB900A94686 /* ExpenseBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpenseBaseViewController.m; sourceTree = "<group>"; };
+		DBB1BFBB1E55CBB900A94686 /* RegisterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegisterViewController.h; sourceTree = "<group>"; };
+		DBB1BFBC1E55CBB900A94686 /* RegisterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegisterViewController.m; sourceTree = "<group>"; };
+		DBB1BFBD1E55CBB900A94686 /* SelectCategoryViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectCategoryViewController.h; sourceTree = "<group>"; };
+		DBB1BFBE1E55CBB900A94686 /* SelectCategoryViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectCategoryViewController.m; sourceTree = "<group>"; };
+		DBB1BFC21E55CBC500A94686 /* ListExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ListExpenseViewController.h; sourceTree = "<group>"; };
+		DBB1BFC31E55CBC500A94686 /* ListExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ListExpenseViewController.m; sourceTree = "<group>"; };
+		DBB1BFC41E55CBC500A94686 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		DBB1BFC51E55CBC500A94686 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		DBB1BFC81E55CBD400A94686 /* CacheManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CacheManager.h; sourceTree = "<group>"; };
+		DBB1BFC91E55CBD400A94686 /* CacheManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CacheManager.m; sourceTree = "<group>"; };
+		DBB1BFCB1E55CBDC00A94686 /* ExpenseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExpenseViewController.h; sourceTree = "<group>"; };
+		DBB1BFCC1E55CBDC00A94686 /* ExpenseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExpenseViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,18 +113,14 @@
 		08A0D4F51E54E3E1002F3156 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				08A0D4E31E54DA02002F3156 /* User+CoreDataClass.h */,
-				08A0D4E41E54DA02002F3156 /* User+CoreDataClass.m */,
-				08A0D4E51E54DA02002F3156 /* User+CoreDataProperties.h */,
-				08A0D4E61E54DA02002F3156 /* User+CoreDataProperties.m */,
-				08A0D4E71E54DA02002F3156 /* Expense+CoreDataClass.h */,
-				08A0D4E81E54DA02002F3156 /* Expense+CoreDataClass.m */,
-				08A0D4E91E54DA02002F3156 /* Expense+CoreDataProperties.h */,
-				08A0D4EA1E54DA02002F3156 /* Expense+CoreDataProperties.m */,
-				08A0D4EB1E54DA02002F3156 /* Category+CoreDataClass.h */,
-				08A0D4EC1E54DA02002F3156 /* Category+CoreDataClass.m */,
-				08A0D4ED1E54DA02002F3156 /* Category+CoreDataProperties.h */,
-				08A0D4EE1E54DA02002F3156 /* Category+CoreDataProperties.m */,
+				DBB1BFA71E55CB7D00A94686 /* Category+CoreDataClass.h */,
+				DBB1BFA81E55CB7D00A94686 /* Category+CoreDataClass.m */,
+				DBB1BFA91E55CB7D00A94686 /* Category+CoreDataProperties.h */,
+				DBB1BFAA1E55CB7D00A94686 /* Category+CoreDataProperties.m */,
+				DBB1BFAB1E55CB7D00A94686 /* Expense+CoreDataClass.h */,
+				DBB1BFAC1E55CB7D00A94686 /* Expense+CoreDataClass.m */,
+				DBB1BFAD1E55CB7D00A94686 /* Expense+CoreDataProperties.h */,
+				DBB1BFAE1E55CB7D00A94686 /* Expense+CoreDataProperties.m */,
 			);
 			name = CoreData;
 			sourceTree = "<group>";
@@ -136,18 +128,18 @@
 		08A0D4F61E54E401002F3156 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				08A0D4DD1E54D2E6002F3156 /* SelectCategoryViewController.h */,
-				08A0D4DE1E54D2E6002F3156 /* SelectCategoryViewController.m */,
-				081FEAAD1E548EA100424071 /* ListExpenseViewController.h */,
-				081FEAAE1E548EA100424071 /* ListExpenseViewController.m */,
-				0833AD071E5438B300217B31 /* LoginViewController.h */,
-				0833AD081E5438B300217B31 /* LoginViewController.m */,
-				0833AD0A1E5438C600217B31 /* RegisterViewController.h */,
-				0833AD0B1E5438C600217B31 /* RegisterViewController.m */,
-				0833AD0D1E54553000217B31 /* ExpenseBaseViewController.h */,
-				0833AD0E1E54553000217B31 /* ExpenseBaseViewController.m */,
-				081FEAA71E54857100424071 /* ExpenseViewController.h */,
-				081FEAA81E54857100424071 /* ExpenseViewController.m */,
+				DBB1BFCB1E55CBDC00A94686 /* ExpenseViewController.h */,
+				DBB1BFCC1E55CBDC00A94686 /* ExpenseViewController.m */,
+				DBB1BFC21E55CBC500A94686 /* ListExpenseViewController.h */,
+				DBB1BFC31E55CBC500A94686 /* ListExpenseViewController.m */,
+				DBB1BFC41E55CBC500A94686 /* LoginViewController.h */,
+				DBB1BFC51E55CBC500A94686 /* LoginViewController.m */,
+				DBB1BFB91E55CBB900A94686 /* ExpenseBaseViewController.h */,
+				DBB1BFBA1E55CBB900A94686 /* ExpenseBaseViewController.m */,
+				DBB1BFBB1E55CBB900A94686 /* RegisterViewController.h */,
+				DBB1BFBC1E55CBB900A94686 /* RegisterViewController.m */,
+				DBB1BFBD1E55CBB900A94686 /* SelectCategoryViewController.h */,
+				DBB1BFBE1E55CBB900A94686 /* SelectCategoryViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -155,10 +147,10 @@
 		08A0D4F71E54E428002F3156 /* Row */ = {
 			isa = PBXGroup;
 			children = (
-				081FEAAA1E548E5B00424071 /* ExpenseListTableViewCell.h */,
-				081FEAAB1E548E5B00424071 /* ExpenseListTableViewCell.m */,
-				08A0D4E01E54D451002F3156 /* CategoryTableViewCell.h */,
-				08A0D4E11E54D451002F3156 /* CategoryTableViewCell.m */,
+				DBB1BFB31E55CB9700A94686 /* CategoryTableViewCell.h */,
+				DBB1BFB41E55CB9700A94686 /* CategoryTableViewCell.m */,
+				DBB1BFB51E55CB9700A94686 /* ExpenseListTableViewCell.h */,
+				DBB1BFB61E55CB9700A94686 /* ExpenseListTableViewCell.m */,
 			);
 			name = Row;
 			sourceTree = "<group>";
@@ -187,6 +179,8 @@
 		08F7CB041E5045F00034FD31 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				DBB1BFC81E55CBD400A94686 /* CacheManager.h */,
+				DBB1BFC91E55CBD400A94686 /* CacheManager.m */,
 				08A0D4F71E54E428002F3156 /* Row */,
 				08A0D4F61E54E401002F3156 /* ViewController */,
 				08F7CB081E5045F00034FD31 /* AppDelegate.h */,
@@ -196,8 +190,6 @@
 				08F7CB191E5045F40034FD31 /* Info.plist */,
 				08F7CB111E5045F20034FD31 /* ExpenseTracker.xcdatamodeld */,
 				08F7CB051E5045F00034FD31 /* Supporting Files */,
-				081FEAB01E54C08800424071 /* CacheManager.h */,
-				081FEAB11E54C08800424071 /* CacheManager.m */,
 			);
 			path = ExpenseTracker;
 			sourceTree = "<group>";
@@ -360,18 +352,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				081FEAA91E54857100424071 /* ExpenseViewController.m in Sources */,
-				0833AD0C1E5438C600217B31 /* RegisterViewController.m in Sources */,
-				0833AD0F1E54553000217B31 /* ExpenseBaseViewController.m in Sources */,
+				DBB1BFC11E55CBB900A94686 /* SelectCategoryViewController.m in Sources */,
+				DBB1BFCA1E55CBD400A94686 /* CacheManager.m in Sources */,
+				DBB1BFB71E55CB9700A94686 /* CategoryTableViewCell.m in Sources */,
+				DBB1BFBF1E55CBB900A94686 /* ExpenseBaseViewController.m in Sources */,
 				08F7CB0A1E5045F10034FD31 /* AppDelegate.m in Sources */,
-				081FEAAC1E548E5B00424071 /* ExpenseListTableViewCell.m in Sources */,
-				08A0D4DF1E54D2E6002F3156 /* SelectCategoryViewController.m in Sources */,
 				08F7CB071E5045F00034FD31 /* main.m in Sources */,
-				08A0D4E21E54D451002F3156 /* CategoryTableViewCell.m in Sources */,
-				081FEAB21E54C08800424071 /* CacheManager.m in Sources */,
+				DBB1BFC61E55CBC500A94686 /* ListExpenseViewController.m in Sources */,
+				DBB1BFCD1E55CBDC00A94686 /* ExpenseViewController.m in Sources */,
+				DBB1BFC01E55CBB900A94686 /* RegisterViewController.m in Sources */,
+				DBB1BFB81E55CB9700A94686 /* ExpenseListTableViewCell.m in Sources */,
 				08F7CB131E5045F30034FD31 /* ExpenseTracker.xcdatamodeld in Sources */,
-				0833AD091E5438B300217B31 /* LoginViewController.m in Sources */,
-				081FEAAF1E548EA100424071 /* ListExpenseViewController.m in Sources */,
+				DBB1BFC71E55CBC500A94686 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -514,6 +506,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ExpenseTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.msf.ExpenseTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -530,6 +523,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = ExpenseTracker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.msf.ExpenseTracker;
 				PRODUCT_NAME = "$(TARGET_NAME)";
