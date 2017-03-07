@@ -34,6 +34,9 @@
         [self showAlert:@"User registered"];
     }
 }
+- (IBAction)doneAction:(id)sender {
+    [self alertDismissed];
+}
 -(void)alertDismissed
 {
     [self dismissViewControllerAnimated:YES completion:nil];

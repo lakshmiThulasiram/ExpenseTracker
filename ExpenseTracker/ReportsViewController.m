@@ -138,7 +138,7 @@
         label = [self labelForMonthYearDateAtIndex:index];
         
     }
-    self.legendLbl.text = [NSString stringWithFormat:@"Rs. %@ on %@", [self.arrayOfValues objectAtIndex:index],label];
+    self.legendLbl.text = [NSString stringWithFormat:@"Rs. %.2f on %@", [[self.arrayOfValues objectAtIndex:index] floatValue],label];
 }
 
 - (void)lineGraph:(BEMSimpleLineGraphView *)graph didReleaseTouchFromGraphWithClosestIndex:(CGFloat)index {
