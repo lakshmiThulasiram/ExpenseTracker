@@ -17,7 +17,7 @@
 @property (weak, nonatomic) IBOutlet UITableView *expenseTableView;
 @property (weak, nonatomic) IBOutlet UIButton *addExpenseAction;
 @property (weak, nonatomic) IBOutlet UIButton *editButton;
-@property (weak, nonatomic) IBOutlet UILabel *errorLabel;
 @property (weak, nonatomic) IBOutlet UIButton *reportsBtn;
+@property (weak, nonatomic) IBOutlet UILabel *errorLabel;
 
 @end

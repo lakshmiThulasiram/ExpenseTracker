@@ -120,8 +120,6 @@
 
 - (void)lineGraph:(BEMSimpleLineGraphView *)graph didTouchGraphWithClosestIndex:(NSInteger)index {
     
-//     self.legendLbl.text = [NSString stringWithFormat:@"Rs. %@ on %@",[self.valuesDict objectForKey:[[self.valuesDict allKeys] objectAtIndex:index]],[self labelForDateAtIndex:index]];
-
     NSString *label;
     if(self.frequencySegment.selectedSegmentIndex == 0)
     {
