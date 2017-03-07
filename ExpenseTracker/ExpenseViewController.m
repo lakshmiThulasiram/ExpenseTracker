@@ -17,6 +17,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    UIToolbar *keyboardDoneButtonView = [[UIToolbar alloc] init];
+    [keyboardDoneButtonView sizeToFit];
+    UIBarButtonItem *doneButton = [[UIBarButtonItem alloc] initWithTitle:@"Done"
+                                                                   style:UIBarButtonItemStylePlain target:self
+                                                                  action:@selector(doneClicked:)];
+    [keyboardDoneButtonView setItems:[NSArray arrayWithObjects:doneButton, nil]];
+    self.amountTextbox.inputAccessoryView = keyboardDoneButtonView;
     // Do any additional setup after loading the view.
 }
 
@@ -56,6 +63,10 @@
         [self.delegate fetchExpenseData];
     }];
 
+}
+- (void)doneClicked:(id)sender
+{
+    [self.view endEditing:YES];
 }
 #pragma Helper
 -(void)insertExpenseToDB

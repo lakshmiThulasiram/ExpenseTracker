@@ -204,89 +204,92 @@
 -(void)fetchExpenseData:(NSInteger)selectedSegment
 {
     NSArray *expenseList = [self sortAndFetchAllExpenses];
-    
-    NSDate *firstDateEntry = ((Expense *) [expenseList objectAtIndex:0]).date;
-    NSDateComponents *creationComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:firstDateEntry];
-    int firstYear = (int)[creationComponents year];
-    int firstMonth = (int)[creationComponents month];    
-    
-    
-    NSDate *lastDateEntry = ((Expense *) [expenseList lastObject]).date;
-    NSDateComponents *lastComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:lastDateEntry];
-    NSInteger lastyear = [lastComponents year];
-    NSInteger lastMonth = [lastComponents month];    
-    
-    [self.arrayOfValues removeAllObjects];
-    [self.arrayOfDates removeAllObjects];
-    for(int i = firstYear ; i <= lastyear; i ++)
+    if([expenseList count] > 0)
     {
-        NSInteger numberOfMonths = 12;
-        if(i == lastyear)
+        NSDate *firstDateEntry = ((Expense *) [expenseList objectAtIndex:0]).date;
+        NSDateComponents *creationComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:firstDateEntry];
+        int firstYear = (int)[creationComponents year];
+        int firstMonth = (int)[creationComponents month];    
+        
+        
+        NSDate *lastDateEntry = ((Expense *) [expenseList lastObject]).date;
+        NSDateComponents *lastComponents = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:lastDateEntry];
+        NSInteger lastyear = [lastComponents year];
+        NSInteger lastMonth = [lastComponents month];    
+        
+        [self.arrayOfValues removeAllObjects];
+        [self.arrayOfDates removeAllObjects];
+        for(int i = firstYear ; i <= lastyear; i ++)
         {
-            numberOfMonths = lastMonth;
-        }
-        for (int j=firstMonth; j <=numberOfMonths; j++) 
-        { 
-            NSDate *lastDateOfTheMonth = [self lastDayOfMonth:j andYear:i];
-            
-            NSArray *monthExpense = [self getExpenses:expenseList betweenDates:[self getFirstDateOfMonth:j andYear:i] :lastDateOfTheMonth];
-            
-            switch (selectedSegment) {
-                case 0://Day
-                {
-                    NSArray *dayEntriesForTheMonth = [monthExpense valueForKeyPath:@"@distinctUnionOfObjects.date"];
-                    NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"self" 
-                                                                                     ascending:YES];
-                    dayEntriesForTheMonth = [dayEntriesForTheMonth sortedArrayUsingDescriptors:@[dateDescriptor]];
-                    for(NSDate *expenseDate in dayEntriesForTheMonth)
+            NSInteger numberOfMonths = 12;
+            if(i == lastyear)
+            {
+                numberOfMonths = lastMonth;
+            }
+            for (int j=firstMonth; j <=numberOfMonths; j++) 
+            { 
+                NSDate *lastDateOfTheMonth = [self lastDayOfMonth:j andYear:i];
+                
+                NSArray *monthExpense = [self getExpenses:expenseList betweenDates:[self getFirstDateOfMonth:j andYear:i] :lastDateOfTheMonth];
+                
+                switch (selectedSegment) {
+                    case 0://Day
                     {
-                        
-                        NSPredicate *datePredicate = [NSPredicate predicateWithFormat:@"date == %@",expenseDate];
-                        NSArray *dayExpense = [monthExpense filteredArrayUsingPredicate:datePredicate];
-                        NSNumber *sum = [dayExpense valueForKeyPath:@"@sum.amount"];
-                        NSLog(@"%f",sum.floatValue);
-                        
-                        [self.arrayOfValues addObject:[NSString stringWithFormat:@"%f",sum.floatValue ]];
-                        [self.arrayOfDates addObject:expenseDate];
-                        
-                    }
-                    break;
-                    
-                }
-                case 1://Weekly
-                {
-                    NSDate *firstDateOfWeek = ((Expense *) [expenseList objectAtIndex:0]).date;
-                    NSDate *lastDateOfWeek = [self getLastDateOfTheWeek:firstDateOfWeek];
-                    while ([self isFromDateLessThanToDate:lastDateOfWeek toDate:lastDateOfTheMonth]) {
-                        NSArray *weekExpense = [self getExpenses:monthExpense betweenDates:firstDateOfWeek :lastDateOfWeek];
-                        
-                        NSNumber *sum = [weekExpense valueForKeyPath:@"@sum.amount"];
-                        if([sum floatValue]>0)
+                        NSArray *dayEntriesForTheMonth = [monthExpense valueForKeyPath:@"@distinctUnionOfObjects.date"];
+                        NSSortDescriptor *dateDescriptor = [NSSortDescriptor sortDescriptorWithKey:@"self" 
+                                                                                         ascending:YES];
+                        dayEntriesForTheMonth = [dayEntriesForTheMonth sortedArrayUsingDescriptors:@[dateDescriptor]];
+                        for(NSDate *expenseDate in dayEntriesForTheMonth)
                         {
+                            
+                            NSPredicate *datePredicate = [NSPredicate predicateWithFormat:@"date == %@",expenseDate];
+                            NSArray *dayExpense = [monthExpense filteredArrayUsingPredicate:datePredicate];
+                            NSNumber *sum = [dayExpense valueForKeyPath:@"@sum.amount"];
+                            NSLog(@"%f",sum.floatValue);
+                            
                             [self.arrayOfValues addObject:[NSString stringWithFormat:@"%f",sum.floatValue ]];
-                            [self.arrayOfDates addObject:lastDateOfWeek];
+                            [self.arrayOfDates addObject:expenseDate];
                             
                         }
-                        firstDateOfWeek = [self getDate:lastDateOfWeek byAddingDays:1];
-                        lastDateOfWeek = [self getLastDateOfTheWeek:firstDateOfWeek];
+                        break;
                         
                     }
-                    break;
+                    case 1://Weekly
+                    {
+                        NSDate *firstDateOfWeek = ((Expense *) [expenseList objectAtIndex:0]).date;
+                        NSDate *lastDateOfWeek = [self getLastDateOfTheWeek:firstDateOfWeek];
+                        while ([self isFromDateLessThanToDate:lastDateOfWeek toDate:lastDateOfTheMonth]) {
+                            NSArray *weekExpense = [self getExpenses:monthExpense betweenDates:firstDateOfWeek :lastDateOfWeek];
+                            
+                            NSNumber *sum = [weekExpense valueForKeyPath:@"@sum.amount"];
+                            if([sum floatValue]>0)
+                            {
+                                [self.arrayOfValues addObject:[NSString stringWithFormat:@"%f",sum.floatValue ]];
+                                [self.arrayOfDates addObject:lastDateOfWeek];
+                                
+                            }
+                            firstDateOfWeek = [self getDate:lastDateOfWeek byAddingDays:1];
+                            lastDateOfWeek = [self getLastDateOfTheWeek:firstDateOfWeek];
+                            
+                        }
+                        break;
+                    }
+                    case 2://Monthly
+                    {
+                        NSNumber *sum = [monthExpense valueForKeyPath:@"@sum.amount"];
+                        [self.arrayOfValues addObject:[NSString stringWithFormat:@"%f",sum.floatValue ]];
+                        [self.arrayOfDates addObject:[self getFirstDateOfMonth:j andYear:i]];
+                        break;
+                    }
                 }
-                case 2://Monthly
-                {
-                    NSNumber *sum = [monthExpense valueForKeyPath:@"@sum.amount"];
-                    [self.arrayOfValues addObject:[NSString stringWithFormat:@"%f",sum.floatValue ]];
-                    [self.arrayOfDates addObject:[self getFirstDateOfMonth:j andYear:i]];
-                    break;
-                }
+                
             }
+            firstMonth = 1;
             
         }
-        firstMonth = 1;
-        
+        [self.reportLineGraph reloadGraph];
     }
-    [self.reportLineGraph reloadGraph];
+    
 }
 
 @end

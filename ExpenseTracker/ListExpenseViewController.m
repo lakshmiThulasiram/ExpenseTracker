@@ -138,6 +138,11 @@
     NSPredicate *userPredicate = [NSPredicate predicateWithFormat:@"user == %@",[[CacheManager sharedInstance] currentUser]];
     NSPredicate *datePredicate = [NSPredicate predicateWithFormat:@"(date >= %@) AND (date <= %@)",self.fromDate,self.toDate];
 
+    NSSortDescriptor *dateDescriptor = [NSSortDescriptor
+                                        sortDescriptorWithKey:@"date" 
+                                        ascending:YES];
+    NSArray *sortDescriptors = [NSArray arrayWithObject:dateDescriptor];
+    [request setSortDescriptors:sortDescriptors];                   
     
     
     [request setPredicate:[NSCompoundPredicate andPredicateWithSubpredicates:@[userPredicate,datePredicate]]];
