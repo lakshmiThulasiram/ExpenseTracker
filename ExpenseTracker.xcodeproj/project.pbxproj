@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		08AD1BA61E6D0F57005DED68 /* ReportsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AD1BA51E6D0F57005DED68 /* ReportsViewController.m */; };
+		08AD1BBD1E6D6610005DED68 /* BEMAverageLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AD1BB41E6D6610005DED68 /* BEMAverageLine.m */; };
+		08AD1BBE1E6D6610005DED68 /* BEMCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AD1BB61E6D6610005DED68 /* BEMCircle.m */; };
+		08AD1BBF1E6D6610005DED68 /* BEMLine.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AD1BB81E6D6610005DED68 /* BEMLine.m */; };
+		08AD1BC01E6D6610005DED68 /* BEMPermanentPopupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AD1BBA1E6D6610005DED68 /* BEMPermanentPopupView.m */; };
+		08AD1BC11E6D6610005DED68 /* BEMSimpleLineGraphView.m in Sources */ = {isa = PBXBuildFile; fileRef = 08AD1BBC1E6D6610005DED68 /* BEMSimpleLineGraphView.m */; };
 		08F7CB071E5045F00034FD31 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F7CB061E5045F00034FD31 /* main.m */; };
 		08F7CB0A1E5045F10034FD31 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 08F7CB091E5045F10034FD31 /* AppDelegate.m */; };
 		08F7CB101E5045F20034FD31 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08F7CB0E1E5045F20034FD31 /* Main.storyboard */; };
@@ -43,6 +49,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		08AD1BA41E6D0F57005DED68 /* ReportsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ReportsViewController.h; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ReportsViewController.h"; sourceTree = "<group>"; };
+		08AD1BA51E6D0F57005DED68 /* ReportsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ReportsViewController.m; path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/ReportsViewController.m"; sourceTree = "<group>"; };
+		08AD1BB31E6D6610005DED68 /* BEMAverageLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMAverageLine.h; sourceTree = "<group>"; };
+		08AD1BB41E6D6610005DED68 /* BEMAverageLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMAverageLine.m; sourceTree = "<group>"; };
+		08AD1BB51E6D6610005DED68 /* BEMCircle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMCircle.h; sourceTree = "<group>"; };
+		08AD1BB61E6D6610005DED68 /* BEMCircle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMCircle.m; sourceTree = "<group>"; };
+		08AD1BB71E6D6610005DED68 /* BEMLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMLine.h; sourceTree = "<group>"; };
+		08AD1BB81E6D6610005DED68 /* BEMLine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMLine.m; sourceTree = "<group>"; };
+		08AD1BB91E6D6610005DED68 /* BEMPermanentPopupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMPermanentPopupView.h; sourceTree = "<group>"; };
+		08AD1BBA1E6D6610005DED68 /* BEMPermanentPopupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMPermanentPopupView.m; sourceTree = "<group>"; };
+		08AD1BBB1E6D6610005DED68 /* BEMSimpleLineGraphView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BEMSimpleLineGraphView.h; sourceTree = "<group>"; };
+		08AD1BBC1E6D6610005DED68 /* BEMSimpleLineGraphView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BEMSimpleLineGraphView.m; sourceTree = "<group>"; };
 		08F7CB021E5045F00034FD31 /* ExpenseTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ExpenseTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08F7CB061E5045F00034FD31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		08F7CB081E5045F00034FD31 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -140,6 +158,8 @@
 				DBB1BFBC1E55CBB900A94686 /* RegisterViewController.m */,
 				DBB1BFBD1E55CBB900A94686 /* SelectCategoryViewController.h */,
 				DBB1BFBE1E55CBB900A94686 /* SelectCategoryViewController.m */,
+				08AD1BA41E6D0F57005DED68 /* ReportsViewController.h */,
+				08AD1BA51E6D0F57005DED68 /* ReportsViewController.m */,
 			);
 			name = ViewController;
 			sourceTree = "<group>";
@@ -153,6 +173,24 @@
 				DBB1BFB61E55CB9700A94686 /* ExpenseListTableViewCell.m */,
 			);
 			name = Row;
+			sourceTree = "<group>";
+		};
+		08AD1BB21E6D6610005DED68 /* BEM */ = {
+			isa = PBXGroup;
+			children = (
+				08AD1BB31E6D6610005DED68 /* BEMAverageLine.h */,
+				08AD1BB41E6D6610005DED68 /* BEMAverageLine.m */,
+				08AD1BB51E6D6610005DED68 /* BEMCircle.h */,
+				08AD1BB61E6D6610005DED68 /* BEMCircle.m */,
+				08AD1BB71E6D6610005DED68 /* BEMLine.h */,
+				08AD1BB81E6D6610005DED68 /* BEMLine.m */,
+				08AD1BB91E6D6610005DED68 /* BEMPermanentPopupView.h */,
+				08AD1BBA1E6D6610005DED68 /* BEMPermanentPopupView.m */,
+				08AD1BBB1E6D6610005DED68 /* BEMSimpleLineGraphView.h */,
+				08AD1BBC1E6D6610005DED68 /* BEMSimpleLineGraphView.m */,
+			);
+			name = BEM;
+			path = "../../../../../apple/development/MY TRIES/ExpenseTracker/ExpenseTracker/BEM";
 			sourceTree = "<group>";
 		};
 		08F7CAF91E5045EF0034FD31 = {
@@ -179,6 +217,7 @@
 		08F7CB041E5045F00034FD31 /* ExpenseTracker */ = {
 			isa = PBXGroup;
 			children = (
+				08AD1BB21E6D6610005DED68 /* BEM */,
 				DBB1BFC81E55CBD400A94686 /* CacheManager.h */,
 				DBB1BFC91E55CBD400A94686 /* CacheManager.m */,
 				08A0D4F71E54E428002F3156 /* Row */,
@@ -352,15 +391,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				08AD1BBF1E6D6610005DED68 /* BEMLine.m in Sources */,
 				DBB1BFC11E55CBB900A94686 /* SelectCategoryViewController.m in Sources */,
+				08AD1BC11E6D6610005DED68 /* BEMSimpleLineGraphView.m in Sources */,
 				DBB1BFCA1E55CBD400A94686 /* CacheManager.m in Sources */,
+				08AD1BC01E6D6610005DED68 /* BEMPermanentPopupView.m in Sources */,
 				DBB1BFB71E55CB9700A94686 /* CategoryTableViewCell.m in Sources */,
 				DBB1BFBF1E55CBB900A94686 /* ExpenseBaseViewController.m in Sources */,
 				08F7CB0A1E5045F10034FD31 /* AppDelegate.m in Sources */,
+				08AD1BBE1E6D6610005DED68 /* BEMCircle.m in Sources */,
 				08F7CB071E5045F00034FD31 /* main.m in Sources */,
 				DBB1BFC61E55CBC500A94686 /* ListExpenseViewController.m in Sources */,
 				DBB1BFCD1E55CBDC00A94686 /* ExpenseViewController.m in Sources */,
+				08AD1BBD1E6D6610005DED68 /* BEMAverageLine.m in Sources */,
 				DBB1BFC01E55CBB900A94686 /* RegisterViewController.m in Sources */,
+				08AD1BA61E6D0F57005DED68 /* ReportsViewController.m in Sources */,
 				DBB1BFB81E55CB9700A94686 /* ExpenseListTableViewCell.m in Sources */,
 				08F7CB131E5045F30034FD31 /* ExpenseTracker.xcdatamodeld in Sources */,
 				DBB1BFC71E55CBC500A94686 /* LoginViewController.m in Sources */,

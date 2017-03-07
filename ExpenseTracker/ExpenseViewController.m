@@ -62,11 +62,12 @@
 {
     NSManagedObjectContext *context = [self managedObjectContext];
     
-    // Create a new managed object
     Expense *newExpense = [NSEntityDescription insertNewObjectForEntityForName:@"Expense" inManagedObjectContext:context];
     newExpense.amount    = [self.amountTextbox.text doubleValue];
     newExpense.expenseDescription = self.expenseDescriptionTextbox.text;
-    newExpense.date              = self.datePicker.date;
+      
+    
+    newExpense.date              = [self getDateIgnorinbgTime:self.datePicker.date];
     
     Category *category = [NSEntityDescription insertNewObjectForEntityForName:@"Category" inManagedObjectContext:context];
     category.category   = self.categoryTextbox.text;

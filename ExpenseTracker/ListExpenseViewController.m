@@ -9,15 +9,28 @@
 #import "ListExpenseViewController.h"
 #import "ExpenseListTableViewCell.h"
 #import "ExpenseViewController.h"
+#import "ReportsViewController.h"
 
+#define kReportsSegueID @"reports"
 @interface ListExpenseViewController ()<AddExpenseDelegate>
 @property (nonatomic, strong) NSArray       *expenseData;
+@property (nonatomic, strong) NSDate        *fromDate;
+@property (nonatomic, strong) NSDate        *toDate;
+
 @end
 
 @implementation ListExpenseViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+    self.fromDate = [self getFirstDateOfMonth:[NSDate date]];
+    self.toDate   = [NSDate date];
+    
+    [self.fromDateBtn setTitle:[self striongFromDate:self.fromDate] forState:UIControlStateNormal];
+    [self.toDateBtn setTitle:[self striongFromDate:self.toDate] forState:UIControlStateNormal];
+
+    
     // Do any additional setup after loading the view.
 }
 -(void)viewWillAppear:(BOOL)animated{
@@ -32,8 +45,17 @@
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(nullable id)sender
 {
     NSLog(@"preparing");
-    ExpenseViewController *expenseVC    = segue.destinationViewController;
-    expenseVC.delegate                  = self;
+    if([segue.identifier isEqualToString:kReportsSegueID] )
+    {
+//        ReportsViewController *reportsVC    = segue.destinationViewController;
+//        reportsVC.slices                    = [self.expenseData valueForKeyPath:@""];
+
+    }
+    else{
+        ExpenseViewController *expenseVC    = segue.destinationViewController;
+        expenseVC.delegate                  = self;
+    }
+   
 }
 #pragma mark-
 #pragma Actions
@@ -51,7 +73,16 @@
         [self.editButton setTitle:@"Edit" forState:UIControlStateNormal];
 
     }
+}
+- (IBAction)reportAction:(id)sender {
+    [self performSegueWithIdentifier:kReportsSegueID sender:self];
+}
 
+- (IBAction)fromDateAction:(id)sender {
+    [self showActionSheetWithDefaultDate:sender];
+}
+- (IBAction)toDateAction:(id)sender {
+    [self showActionSheetWithDefaultDate:sender];
 }
 #pragma mark-
 #pragma TableView delegates
@@ -99,10 +130,17 @@
 
 -(void)fetchExpenseData
 {
+        
     NSFetchRequest *request = [[NSFetchRequest alloc] init];
     NSEntityDescription *entity = [NSEntityDescription entityForName:kExpense inManagedObjectContext:[self managedObjectContext]];
     [request setEntity:entity];
-    [request setPredicate:[NSPredicate predicateWithFormat:@"user == %@",[[CacheManager sharedInstance] currentUser]]];
+    
+    NSPredicate *userPredicate = [NSPredicate predicateWithFormat:@"user == %@",[[CacheManager sharedInstance] currentUser]];
+    NSPredicate *datePredicate = [NSPredicate predicateWithFormat:@"(date >= %@) AND (date <= %@)",self.fromDate,self.toDate];
+
+    
+    
+    [request setPredicate:[NSCompoundPredicate andPredicateWithSubpredicates:@[userPredicate,datePredicate]]];
 
     
     NSError *errorFetch = nil;
@@ -127,4 +165,52 @@
         NSLog(@"Can't Save! %@ %@", error, [error localizedDescription]);
     }
 }
+-(void)showActionSheetWithDefaultDate:(id)sender{
+
+    UIAlertController  *alertCtrl = [UIAlertController alertControllerWithTitle:@"\n\n\n\n\n\n\n\n\n\n\n" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    UIDatePicker *picker = [[UIDatePicker alloc] init];
+    [picker setDatePickerMode:UIDatePickerModeDate];
+    picker.maximumDate = [NSDate date];
+    [alertCtrl.view addSubview:picker];
+    [alertCtrl addAction:({
+        UIAlertAction *action = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+            NSLog(@"%@",picker.date);
+            
+            if(sender == self.fromDateBtn )
+            {
+                if([self isFromDateLessThanToDate:picker.date toDate:self.toDate])
+                {
+                    self.fromDate = picker.date;
+                    [((UIButton *)sender) setTitle:[self striongFromDate:picker.date] forState:UIControlStateNormal];
+                    [self fetchExpenseData];
+                }
+                else{
+                    [self showAlert:@"From Date should be less than to date"];
+                }
+               
+            }
+            else{
+                if([self isFromDateLessThanToDate:self.fromDate toDate:picker.date])
+                {
+                    self.toDate = picker.date;
+                    [((UIButton *)sender) setTitle:[self striongFromDate:picker.date] forState:UIControlStateNormal];
+                    [self fetchExpenseData];
+
+                }
+                else{
+                    [self showAlert:@"To Date should be greater than from date"];
+                }
+            }
+            
+            
+            
+        }];
+        action;
+    })];
+    UIPopoverPresentationController *popoverController = alertCtrl.popoverPresentationController;
+    popoverController.sourceView = self.view;
+    popoverController.sourceRect = [self.view bounds];
+    [self presentViewController:alertCtrl  animated:YES completion:nil];    
+}
+
 @end

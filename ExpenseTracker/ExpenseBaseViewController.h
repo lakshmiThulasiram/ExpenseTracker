@@ -21,4 +21,12 @@
 - (NSManagedObjectContext *)managedObjectContext;
 -(void)showAlert:(NSString *)message;
 -(void)alertDismissed;
+-(NSDate *)getFirstDateOfMonth:(NSDate*)currentDate;
+-(NSDate *)getFirstDateOfMonth:(int)month andYear:(int)year;
+-(NSDate*)lastDayOfMonth:(int)month andYear:(int)year;
+-(NSDate*)getDateIgnorinbgTime:(NSDate *)date;
+-(NSDate *)getLastDateOfTheWeek:(NSDate *)date;
+-(BOOL) isDatesEqualIgnoringTime:(NSDate *) firstDate secondDate:(NSDate*)secondDate;
+-(BOOL)isFromDateLessThanToDate:(NSDate *)fromDate toDate:(NSDate*)toDate;
+-(NSDate *)getDate:(NSDate *)date byAddingDays:(int)days;
 @end
